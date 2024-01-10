@@ -1,0 +1,627 @@
+*{
+	padding: 0;
+	margin: 0;
+	vertical-align: top;
+	
+}
+
+
+html,body{
+	height: 100%;
+}
+
+
+.NAV {
+	position: fixed;
+	opacity: 0.8;
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: 80px;
+	background-color: black;
+	color: white;
+	/* Permet de garder la barre nav par dessus tout les éléments par défaut */
+	z-index: 4;
+}
+
+.ONGLET{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	list-style-type: none;
+	width: 100%;
+
+}
+
+#TITRE_REVOLVER{
+	display: flex;
+	justify-content: row;
+	align-items: center;
+	margin-left: 20px;
+	font-family: Oswald;
+	font-size: 24px;
+}
+
+.ONGLET li a {
+	width: auto;
+	text-decoration: none;
+	justify-content: center;
+	padding-right: 20px;
+	color: white;
+	font-family: Oswald;
+}
+
+
+
+/* ICONES */
+
+.ICONES {
+	display: flex;
+	flex-direction: row;
+	height: auto;
+	align-items: center;
+	justify-content: flex-end;
+	padding-right: 15px;
+}
+
+.ICONES a{
+	font-size: 20px;
+	padding-right: 30px;
+	color: white;
+}
+
+
+
+/* IMG */
+
+#RegroupementImg{
+	position: relative;
+	z-index: 3;
+	height: 100%;
+
+}
+
+#IMGdeFond{
+	position: absolute;
+	z-index: 1;
+	opacity: 0.9;
+	width: 100%;
+	height: 100%;
+
+
+}
+
+#IMG2{
+	display: flex; 
+	justify-content: center; 
+}
+
+#IMGParDessus{
+	position: absolute;
+	margin-top: 90px;
+    z-index: 2;
+    max-width: 100%;
+	height: auto;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* BANDEAU ORANGE*/
+
+#BANDEAU{
+	background-color: orange;
+	height: auto;
+	display: flex;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+#TexteBandeau{
+	width: 100%;
+	color: white;
+	align-items: center;
+	justify-content: center;
+	
+}
+
+
+#TexteBandeau p{
+	font-size: 25px;
+	font-family: Oswald;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	
+}
+
+
+
+/* SECTION TRADITION */
+#TraditionBEER{
+	display: flex;
+	width: 100%;
+	height: 500px;
+}
+
+
+/* 1er BLOC TRADITION AVEC TEXTE */
+#TraditionBeerBloc{
+	width: 100%;
+}
+
+
+/* 2eme BLOC IMG */
+#TraditionBeerIMG{
+	background-image: url("img/h5-el-holder-img-1-1.jpg");
+	width: 100%;
+	height: 500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;	
+}
+
+
+/* IMG BEST BEER */
+#TraditionBeerIMG img{
+	position: absolute;
+	flex-direction: row;
+	justify-content: center;
+	float: right;
+	width: 60%;
+	height: 70%;
+	margin-left: auto;
+    margin-right: auto;
+	align-items: center;
+	vertical-align: middle;
+    display: flex;
+    text-align: center;
+}
+
+
+
+
+
+
+#TitreTradition{
+	font-family: Oswald;
+	font-size: 35px;
+}
+
+#SousTitreTradition{
+	font-style: italic;
+	padding-bottom: 25px;
+	font-family: Gupter;
+
+}
+
+#TexteTitreTradition{
+	color: grey;
+	font-style: italic;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	text-align: center;
+	padding-bottom: 25px;
+	font-family: Raleway;
+}
+
+/* BTN BEER TRADITION */
+#Btn_BeerTradition{
+	width: 130px;
+	height: 45px;
+	background-color: orange;
+	font-family: Oswald;
+	color: white;
+	border-color: white;
+	border-radius: 5px;
+}
+
+/* BTN BT LUI MEME*/
+#Btn_BeerTradition a{
+	width: 130px;
+	height: 45px;
+	background-color: orange;
+	font-family: Oswald;
+	color: white;
+	border-color: white;
+	border-radius: 5px;
+	text-decoration: none;
+}
+
+#TBEnglobe{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SECTION TRADITION */
+#TraditionPUB{
+	display: flex;
+	width: 100%;
+	height: 500px;
+}
+
+
+/* 1er BLOC TRADITION AVEC TEXTE */
+#PubBloc{
+	width: 100%;
+}
+
+
+/* 2eme BLOC IMG */
+#PUBIMG{
+	background-image: url("img/h5-el-holder-img-1-1.jpg");
+	width: 100%;
+	height: 500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;	
+}
+
+
+/* IMG BEST BEER */
+#PUBIMG img{
+	position: absolute;
+	flex-direction: row;
+	justify-content: center;
+	float: left;
+	width: 60%;
+	height: 70%;
+	margin-left: auto;
+    margin-right: auto;
+	align-items: center;
+	vertical-align: middle;
+    display: flex;
+    text-align: center;
+}
+
+#TitrePUB{
+	font-family: Oswald;
+	font-size: 35px;
+}
+
+#SousTitrePUB{
+	font-style: italic;
+	padding-bottom: 25px;
+	font-family: Gupter;
+}
+
+
+#TextePUB{
+	color: grey;
+	font-style: italic;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	text-align: center;
+	padding-bottom: 25px;
+	font-family: Raleway;
+}
+
+/* BTN BEER TRADITION */
+#Btn_PUB{
+	width: 130px;
+	height: 45px;
+	background-color: orange;
+	font-family: Oswald;
+	color: white;
+	border-color: white;
+	border-radius: 5px;
+}
+
+
+/* BTN STORY LUI MEME */
+#Btn_PUB a{
+	width: 130px;
+	height: 45px;
+	background-color: orange;
+	font-family: Oswald;
+	color: white;
+	border-color: white;
+	border-radius: 5px;
+	text-decoration: none;
+}
+
+
+#PUBEnglobe {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+
+
+
+
+
+
+/* SECTION GALERIE */
+#GALERIE{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 100%;
+}
+
+#BLOC_IMG{
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 100%;
+    overflow: hidden;
+}
+
+#BLOC_IMG img{
+	width: 100%;
+}
+
+#BLOC_IMG img:hover{
+	background-color: rgba(255, 165, 0, 0.7);
+}
+
+
+
+
+
+
+
+
+
+
+/* CE QUI ENGLOBE SIGNE + */
+.EnglobeSigne{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 165, 0, 0); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.5s ease;
+}
+
+
+.EnglobeSigne:hover{
+	 background-color: rgba(255, 165, 0, 0.7);	
+}
+
+
+
+
+/* SIGNE + */
+.Signe{
+   font-size: 2em; 
+   color: white; 
+   opacity: 0;
+   transition: opacity 0.5s ease;
+}
+
+.Signe:hover{
+	  opacity: 1;
+}
+
+
+
+/* SERVICES */
+
+#SERVICES{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.EnglobeSERVICE{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	justify-content: space-around;
+}
+
+
+.EnglobeSERVICE a img{  
+	display: flex;
+	margin-left: auto;
+    margin-right: auto;
+	width: 25%;
+	margin-bottom: 20px;
+    background-color: white;
+}
+
+.EnglobeSERVICE h3{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	font-family: Oswald;
+	margin-bottom: 6px;
+}
+
+.TexteSERVICE{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	vertical-align: middle;
+	margin-bottom: 10px;
+	font-family: Gupter;
+	color: grey;
+	text-align: center;
+}
+
+
+
+
+.EnglobeSERVICE:hover {
+  background-color: white;
+  color: orange;
+}
+
+
+
+.EnglobeSERVICE:hover img {
+  	color: orange;
+	filter: sepia(100%);
+}
+
+
+
+.EnglobeSERVICE:hover ,
+.EnglobeSERVICE:hover h3 {
+  color: orange;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SECTION PARALLAXE */
+
+#PARALLAXE{
+	width: 100%;
+}
+
+#EnglobePARALLAXE{
+	background-image: url(img/h5-parallax-img-2.jpg);
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center; 
+	height: auto;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+/* SECTION PARALLAXE TITRE */
+#EnglobePARALLAXE h3{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center; 
+	color: white;
+	font-family: Oswald;
+	font-size: 35px;
+	padding-bottom: 10px;
+}
+
+/* SECTION PARALLAXE TEXTE */
+#TextePARALLAXE{
+	width: 100%;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-transform: capitalize;
+	font-style: italic;
+}
+
+
+
+
+
+/* LOCALISATION  */
+#Localisation{
+	position: relative;
+	background-color: black;
+	opacity: 0.9;
+	text-align: center;
+	height: 400px;
+}
+
+
+#Localisation iframe{
+	 width: 100%;
+     height: 100%;
+     object-fit: cover;
+     opacity: 0.5;
+     background-color: black;
+}
+
+
+#POINT{
+	  position: absolute;
+      top: 50%; 
+      left: 50%; 
+      transform: translate(-50%, -50%);
+      width: 20px; 
+      height: 30px;
+}
+
+
+
+/* FOOTER */
+
+footer{
+	background-color: black;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+footer img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: 20px;
+}
