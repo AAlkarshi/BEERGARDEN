@@ -2,7 +2,6 @@
 	padding: 0;
 	margin: 0;
 	vertical-align: top;
-	
 }
 
 
@@ -54,16 +53,13 @@ html,body{
 }
 
 
-
 /* ICONES */
-
 .ICONES {
 	display: flex;
 	flex-direction: row;
 	height: auto;
 	align-items: center;
 	justify-content: flex-end;
-	padding-right: 15px;
 }
 
 .ICONES a{
@@ -72,15 +68,30 @@ html,body{
 	color: white;
 }
 
+/* caché le btn burger*/
+#label{
+	visibility: hidden;
+}
+
+/* caché le btn checkbox*/
+#toggle{
+	visibility: hidden;
+}
+
+
+/* MENU btn une fois cliqué pour ORDI*/
+#BtnBurgerMenu{
+	display: none;
+	list-style-type: none;
+}
+
+
 
 
 /* IMG */
-
 #RegroupementImg{
 	position: relative;
-	z-index: 3;
 	height: 100%;
-
 }
 
 #IMGdeFond{
@@ -89,8 +100,6 @@ html,body{
 	opacity: 0.9;
 	width: 100%;
 	height: 100%;
-
-
 }
 
 #IMG2{
@@ -104,9 +113,10 @@ html,body{
     z-index: 2;
     max-width: 100%;
 	height: auto;
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
+	display: inline-block;
+	justify-content: center;
+	align-items: center;
+	padding-top: 25px;
 }
 
 
@@ -135,6 +145,7 @@ html,body{
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	width: 100%;
 	
 }
 
@@ -158,7 +169,7 @@ html,body{
 #TraditionBeerIMG{
 	background-image: url("img/h5-el-holder-img-1-1.jpg");
 	width: 100%;
-	height: 500px;
+	height: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -173,7 +184,7 @@ html,body{
 	justify-content: center;
 	float: right;
 	width: 60%;
-	height: 70%;
+	height: 50%;
 	margin-left: auto;
     margin-right: auto;
 	align-items: center;
@@ -292,7 +303,7 @@ html,body{
 #PUBIMG{
 	background-image: url("img/h5-el-holder-img-1-1.jpg");
 	width: 100%;
-	height: 500px;
+	height: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -624,4 +635,207 @@ footer img{
 	margin-left: auto;
 	margin-right: auto;
 	height: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIAS QUERIES */
+@media screen and (max-width: 768px) {
+	/* BEER */
+	#TraditionBEER{
+	display: flex;
+	flex-direction: column-reverse;
+	width: 100%;
+	height: 75%;
+}
+	/* PUB */
+	#TraditionPUB{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 75%;
+}
+	#TraditionBeerIMG img{
+		height: 100%;
+		
+	} 
+
+	#TraditionPUB img{
+		height: 100%;
+		
+	} 
+
+	#TBEnglobe{
+		margin-bottom: 15px;
+	}
+
+	#PUBEnglobe{
+		margin-bottom: 15px;
+	}
+
+	#GALERIE{
+		display: flex;
+		flex-direction: column;
+	}
+
+	#SERVICES{
+		display: flex;
+		flex-direction: column;
+	}
+
+	#RegroupementImg{
+		height: 100%;
+	}
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#label, #BtnBurgerMenu{
+   display: none;
+}
+
+@media screen and (max-width: 768px){
+
+/* ONGLET CENTRE PAGES */
+.ONGLET li a {
+	visibility: hidden;
+}
+
+#toogle {
+	visibility: visible;
+}
+
+#BtnBurgerMenu:active{
+	display: block;
+	/*align-items: flex-end;*/
+}
+
+/* BOX avec les onglets*/
+nav #BtnBurgerMenu {
+	display: none;
+	height: auto;
+	flex-direction: column;
+    justify-content: space-around;
+    /*align-items: center;*/
+	
+}
+
+/* BOX fond couleur*/
+nav #BtnBurgerMenu li {
+	width: 100px;
+	height: 100px;
+	align-items: center;
+}
+
+/* BOX intérieur ONGLETS*/
+nav #BtnBurgerMenu li a {
+	/*
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	*/
+	width: auto;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+/* ICONE BURGER  caché le btn burger*/
+#label{
+	width: 30px;
+	height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; 
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+    visibility: visible;
+}
+
+
+/* Box avec les onglets*/
+#BtnBurgerMenu li a{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-decoration: none;
+	align-items: center;
+}
+
+/* Qd BTN est cliqué */
+#toggle:checked + #BtnBurgerMenu {
+   display: flex;
+   color: white;
+   flex-direction: column;
+   justify-content: flex-start;
+   width: auto;
+   height: auto;
+   
+}
+
+/* qd btn est cliqué et que les onglets sont survolé */
+#toggle:checked + #BtnBurgerMenu li a:hover {
+   background-color: grey;
+   
+}
+ 
+
+
+
 }
